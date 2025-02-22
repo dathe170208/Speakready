@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Ready</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .topics-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .topic-list {
+            list-style: none;
+        }
+
+        .topic-item {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s ease;
+        }
+
+        .topic-item:hover {
+            transform: translateX(5px);
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speak Ready</h1>
+    
+    <div class="topics-container">
+        <ul class="topic-list">
+            <li class="topic-item">Lesson 1</li>
+            <li class="topic-item">Lesson 2</li>
+            <li class="topic-item">Lesson 3</li>
+            <li class="topic-item">Lesson 4</li>
+            <li class="topic-item">Lesson 5</li>
+            <li class="topic-item">Lesson 6</li>
+            <li class="topic-item">Lesson 6</li>
+            <li class="topic-item">Lesson 6</li>
+            <li class="topic-item">Lesson 6</li>
+            <li class="topic-item">Lesson 6</li>
+            <li class="topic-item">Lesson 6</li>
+        </ul>
+    </div>
+
+    <script>
+        // Add smooth scroll behavior
+        const topicsContainer = document.querySelector('.topics-container');
+        
+        topicsContainer.addEventListener('wheel', (e) => {
+            // Prevent horizontal scroll
+            if (e.deltaY !== 0) {
+                e.preventDefault();
+                topicsContainer.scrollTop += e.deltaY;
+            }
+        });
+
+        // Add click effect to topics
+        document.querySelectorAll('.topic-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Add your click handling logic here
+                console.log('Selected lesson:', item.textContent);
+            });
+        });
+    </script>
+</body>
+</html>

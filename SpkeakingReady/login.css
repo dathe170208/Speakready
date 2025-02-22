@@ -1,0 +1,105 @@
+/* Thiết lập font chữ mặc định */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container chứa form đăng nhập */
+.login-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Tiêu đề đăng nhập */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Ô nhập liệu */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Nhãn và dấu * */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+label span {
+    color: rgb(72, 26, 210);
+}
+
+/* Nút đăng nhập */
+.login-button {
+    width: 100%;
+    background-color: #3921d9;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.login-button:hover {
+    background-color: #3811d3;
+}
+
+/* Nút tạo tài khoản */
+.register-button {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.register-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Quên mật khẩu */
+.forgot-password {
+    text-align: right;
+    margin-top: 5px;
+}
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Điều khoản */
+.terms {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+.terms a:hover {
+    text-decoration: underline;
+}

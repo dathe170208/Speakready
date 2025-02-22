@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Ready Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Speak Ready</h1>
+        <div class="signup-box">
+            <h2>Create a new account</h2>
+            <form id="signup-form">
+                <input type="text" id="firstname" placeholder="First name" required>
+                <input type="text" id="lastname" placeholder="Last name" required>
+                <div class="dob">
+                    <select id="day"></select>
+                    <select id="month"></select>
+                    <select id="year"></select>
+                </div>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="Female"> <span>Nữ</span></label>
+                    <label><input type="radio" name="gender" value="Male"> <span>Nam</span></label>
+                    <label><input type="radio" name="gender" value="Male"> <span>Khác</span></label>
+                </div>
+                <input type="email" id="email" placeholder="Email address" required>
+                <input type="tel" id="phone" placeholder="Phone number" required>
+                <input type="password" id="password" placeholder="New password" required>
+                
+                <button type="submit"> <a href="login.html">Sign up</a> </button>
+            </form>
+            <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

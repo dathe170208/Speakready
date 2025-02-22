@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Ready</title>
+    <link rel="stylesheet" href="home.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="SpeakingReady" class="logo" >
+            <h1>Speak Ready</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <img src="images\home-icon-silhouette.png" alt="Home" width="20" height="20">
+                    <a href="#home">Trang Chủ</a>
+                </li>
+                <li>
+                    <img src="images\learning.png" alt="Home" width="20" height="20">
+                    <a href="#courses">Khóa Học</a>
+                </li>
+
+                <li>
+                    <img src="images\contact-us.png" alt="Home" width="20" height="20">
+                    <a href="#contact">Liên Hệ</a>
+                </li>
+                <a href="login.html" class="login-link">
+                    <button class="login-button">
+                        <img src="images/user-interface.png" alt="Đăng nhập" width="20" height="20">
+                        Đăng nhập
+                    </button>
+                </a>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    
+    
+    <section id="home">
+        <h2>Chào mừng đến với khóa học tiếng Anh trực tuyến</h2>
+        <img src="https://dichthuattienganhgiare.com/wp-content/uploads/2023/04/hoc-tieng-anh-qua-hinh-anh-1024x724.png" alt="Học tiếng Anh" style="width:128px;height:128px;">
+        <p>Học tiếng Anh dễ dàng với các bài học trực tuyến.</p>
+    </section>
+    <div class="slider">
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+        <img id="slider-img" src="imagepage/image1.jpg" alt="Slider Image">
+        <button class="next" onclick="changeImage(1)">❯</button>
+        <script src="slider.js"></script>
+
+    </div>
+    <section id="courses">
+        <h2>Các khóa học</h2>
+        <div class="course">
+            <img src="images/image1.jpg" alt="Khóa học cơ bản">
+            <h3>Tiếng Anh Cơ Bản</h3>
+            <p>Khóa học dành cho người mới bắt đầu.</p>
+        </div>
+        <div class="course">
+            <img src="images/image3.jpg" alt="Khóa học nâng cao">
+            <h3>Tiếng Anh Nâng Cao</h3>
+            <p>Dành cho người muốn nâng cao kỹ năng.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <footer id="contact">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="images/logo.png" alt="Speaking Ready" class="footer-logo">
+                    <p><strong>Speak Ready</strong></p>
+                    <p>📧 Email: dat662522@gmail.com</p>
+                    <p>📞 Hotline/Liên hệ: <strong>8888 888 888</strong></p>
+                    <p>📍 Hòa Lạc</p>
+                </div>
+        
+                <div class="footer-center">
+                    <h3>Sản phẩm</h3>
+                    <p>Câu hỏi thường gặp</p>
+                    <p>Điều khoản</p>
+                    <p>Hướng dẫn sử dụng</p>
+                    <p>Hướng dẫn thanh toán</p>
+                    <p>Chính sách chuyển đổi, hoàn hủy</p>
+                </div>
+        
+                <div class="footer-right">
+                    <h3>Công ty</h3>
+                    <p>Tuyển dụng</p>
+                    <p>Liên hệ</p>
+                    <p>Blogs</p>
+                    <p>Bảo mật</p>
+                </div>
+        
+                <div class="footer-social">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/groups/fptudramaclub"><img src="images/facebook.png" alt="Facebook"></a>
+                
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </section>
+    
+
+</body>
+</html>

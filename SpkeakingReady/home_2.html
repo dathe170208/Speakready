@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Ready</title>
+    <link rel="stylesheet" href="home_2.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="SpeakingReady" class="logo" >
+            <h1>Speak Ready</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <img src="images\home-icon-silhouette.png" alt="Home" width="20" height="20">
+                    <a href="#home">Trang Chủ</a>
+                </li>
+                <li>
+                    <img src="images\learning.png" alt="Home" width="20" height="20">
+                    <a href="#courses">Khóa Học</a>
+                </li>
+
+                <li>
+                    <img src="images\contact-us.png" alt="Home" width="20" height="20">
+                    <a href="#contact">Liên Hệ</a>
+                </li>
+                <li class="profile-dropdown">
+                    <button class="profile-btn">
+                        <img src="images/user-interface.png" alt="Profile" width="20" height="20">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><img src="images\leonardo.png" alt="Profile" width="20" height="20">
+                            <a href="#">Thông tin cá nhân</a></li>
+                        <li><img src="images\setting.png" alt="Setting" width="20" height="20">
+                            <a href="#">Cài đặt</a></li>
+                        <li><img src="images\logout.png" alt="Log out" width="20" height="20">
+                            <a href="#">Đăng xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="main-container">
+        <!-- Topic Panel -->
+        <div class="topic-panel">
+            <h3>Danh sách bài học</h3>
+            <div class="lesson-list">
+                <div class="lesson-item" data-lesson="1">Lesson 1: Greetings</div>
+                <div class="lesson-item" data-lesson="2">Lesson 2: At the Restaurant</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <div class="lesson-item" data-lesson="3">Lesson 3: Shopping</div>
+                <!-- Thêm các lesson khác -->
+            </div>
+        </div>
+    
+        <!-- Dialogue Panel -->
+        <div class="dialogue-panel" id="dialoguePanel">
+            <h3>Hội thoại</h3>
+            <div class="dialogue-content"></div>
+        </div>
+    </div>
+
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li class="dropdown-parent">
+                <span class="dropdown-btn">Khóa Học</span>
+                <ul class="dropdown">
+                    <li><a href="#">Thực hành</a></li>
+                    <li><a href="#">Thi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên Hệ</a></li>
+            <li><a href="#">Thông tin cá nhân</a></li>
+        </ul>
+    </div>
+    <script src="home_2.js"></script>
+
+    
+    
+
+</body>
+</html>

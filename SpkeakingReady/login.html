@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Log in</h2>
+        <form action="#" method="POST">
+            <label for="username">Username <span>*</span></label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+            
+            <label for="password">Password <span>*</span></label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="login-button">Log in</button>
+        </form>
+        <button class="register-button">
+            <a href="signup.html" >Sign up</a>
+        </button>
+        <p class="terms">
+            <a href="#">Điều Khoản Dịch Vụ</a> và <a href="#">Chính Sách Bảo Mật</a>
+        </p>
+    </div>
+</body>
+</html>
